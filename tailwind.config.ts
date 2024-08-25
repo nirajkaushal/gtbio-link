@@ -12,20 +12,20 @@ const config = {
   theme: {
     extend: {
       colors: {
-        main: "#88aaee",
-        mainAccent: "#4d80e6", // not needed for shadcn components
+        main: "var(--gt-main-color)",
+        mainAccent: "var(--gt-main-accent-color)", // not needed for shadcn components
         overlay: "rgba(0,0,0,0.8)", // background color overlay for alert dialogs, modals, etc.
 
         // light mode
-        bg: "#dfe5f2",
-        text: "#000",
-        border: "#000",
+        bg: "var(--gt-bg-color)",
+        text: "var(--gt-text-color)",
+        border: "var(--gt-border-color)",
 
         // dark mode
-        darkBg: "#272933",
-        darkText: "#eeefe9",
-        darkBorder: "#000",
-        secondaryBlack: "#1b1b1b", // opposite of plain white, not used pitch black because borders and box-shadows are that color
+        darkBg: "var(--gt-bg-color-dark)",
+        darkText: "var(--gt-text-color-dark)",
+        darkBorder: "var(--gt-border-color-dark)",
+        secondaryBlack: "var(--gt-secondary-color-dark)", // opposite of plain white, not used pitch black because borders and box-shadows are that color
       },
       borderRadius: {
         base: "5px",
