@@ -1,10 +1,16 @@
+import { cn } from "@/lib/utils"
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"
 import { Button } from "../ui/button"
 import { SettingsDropdown } from "./settings-dropdown"
 
 export function BioContainer() {
   return (
-    <div className="relative h-full flex flex-col w-full max-w-lg bg-main border-2 border-border shadow-light rounded-base p-16 pb-4">
+    <div
+      className={cn(
+        "relative h-full flex flex-col w-full max-w-lg p-16 pb-4"
+        // "bg-main border-2 border-border shadow-light rounded-base"
+      )}
+    >
       <div className="absolute right-4 top-4">
         <SettingsDropdown />
       </div>
