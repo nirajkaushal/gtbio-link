@@ -7,7 +7,7 @@ export function BioContainer() {
   return (
     <div
       className={cn(
-        "relative h-full flex flex-col w-full max-w-lg p-16 pb-4"
+        "relative h-full flex flex-col w-full max-w-lg p-4 xl:p-16 pb-4"
         // "bg-main border-2 border-border shadow-light rounded-base"
       )}
     >
